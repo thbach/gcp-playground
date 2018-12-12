@@ -6,7 +6,7 @@
  * @param {object} data The event payload.
  * @param {object} context The event metadata.
  */
-exports.goodbye = (data, context) => {
+exports.sayit = (data, context) => {
   const pubSubMessage = data;
   const name = pubSubMessage.data
     ? Buffer.from(pubSubMessage.data, 'base64').toString()
